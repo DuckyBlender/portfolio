@@ -18,10 +18,10 @@
 	class="rounded-2x absolute top-1/2 left-1/2 mx-auto flex w-screen max-w-md -translate-x-1/2 -translate-y-1/2 transform flex-col flex-nowrap items-center justify-center space-x-4 space-y-4 rounded-2xl bg-slate-700 p-4 align-middle shadow-xl"
 >
 	<!-- Logo -->
-	<div class="flex flex-row items-center">
+	<div class="flex flex-row items-center space-x-2">
 		<img
 			src="https://avatars.githubusercontent.com/u/42645784"
-			class="h-24 w-24 rounded-full"
+			class="h-24 w-24 transform rounded-full shadow-md transition duration-500 ease-in-out hover:rotate-[360deg]"
 			alt="DuckyBlender's Github Avatar"
 		/>
 		<h1 class="text-5xl font-bold text-white">DuckyBlender</h1>
@@ -41,15 +41,18 @@
 	</div>
 
 	<!-- Buttons -->
-	<div class="flex flex-row items-center">
-		<button class="rounded-full bg-blue-600 py-2 px-4 font-bold text-white">
-			<a href="/">Main</a>
-		</button>
-		<button class="rounded-full bg-blue-600 py-2 px-4 font-bold text-white">
-			<a href="/projects">Projects</a>
-		</button>
-		<button class="rounded-full bg-blue-600 py-2 px-4 font-bold text-white">
-			<a href="/contact">Contact</a>
-		</button>
+	<div class="flex flex-row items-center space-x-2">
+		<a href="/about">
+			<button class="rounded-full bg-blue-600 py-2 px-4 font-bold text-white">About </button>
+		</a>
+		<a href="/projects">
+			<button class="rounded-full bg-blue-600 py-2 px-4 font-bold text-white"> Projects </button>
+		</a>
+		<a href="/contact">
+			<button class="rounded-full bg-blue-600 py-2 px-4 font-bold text-white"> Contact </button>
+		</a>
+		<a href="/">
+			<button class="rounded-full bg-blue-800 py-2 px-4 font-bold text-white"> Home </button>
+		</a>
 	</div>
 </div>
