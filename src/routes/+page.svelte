@@ -1,0 +1,51 @@
+<script lang="ts">
+	// todo: mouse event updates the gradient slightly
+</script>
+
+<!-- Simple portfolio, using tailwind css. Beatuiful reactive dark mode theme. -->
+
+<!-- First, beautiful blurred generated background gradient, a little responsive using mousemove event -->
+<div
+	class="fixed top-0 left-0 -z-10 h-screen w-screen overflow-hidden bg-gradient-to-r from-blue-900 to-purple-800"
+/>
+
+<!-- Second, the main box with the content in the middle of the page. It is going to have a logo on the left, a title and quick about me with 3 buttons directing a more detailed about me -->
+<div
+	class="rounded-2x absolute top-1/2 left-1/2 mx-auto flex w-screen max-w-md -translate-x-1/2 -translate-y-1/2 transform flex-col flex-nowrap items-center justify-center space-x-4 space-y-4 rounded-2xl bg-slate-700 p-4 align-middle shadow-xl"
+>
+	<!-- Logo -->
+	<div class="flex flex-row items-center">
+		<img
+			src="https://avatars.githubusercontent.com/u/42645784"
+			class="h-24 w-24 rounded-full"
+			alt="DuckyBlender's Github Avatar"
+		/>
+		<h1 class="text-5xl font-bold text-white">DuckyBlender</h1>
+	</div>
+
+	<!-- Title -->
+	<h1 class="text-5xl font-bold text-white">
+		Hello, I'm <span class="text-blue-600">Alan</span>
+	</h1>
+
+	<!-- About me -->
+	<div class="flex flex-row items-center ">
+		<p class="text-2xl font-bold text-white">
+			I'm a <span class="text-blue-600">Rust developer</span> from the
+			<span class="text-red-600">UK</span>
+		</p>
+	</div>
+
+	<!-- Buttons -->
+	<div class="flex flex-row items-center">
+		<button class="rounded-full bg-blue-600 py-2 px-4 font-bold text-white">
+			<a href="/about">About me</a>
+		</button>
+		<button class="rounded-full bg-blue-600 py-2 px-4 font-bold text-white">
+			<a href="/projects">Projects</a>
+		</button>
+		<button class="rounded-full bg-blue-600 py-2 px-4 font-bold text-white">
+			<a href="/contact">Contact</a>
+		</button>
+	</div>
+</div>
